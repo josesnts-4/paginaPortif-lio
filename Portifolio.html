@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>José Ramos — Desenvolvedor Back-end</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <nav>
+    <div class="wrap">
+      <div class="nav-brand">jose@backend:~$</div>
+      <div class="nav-links">
+        <a href="#about"><span class="dot">●</span> sobre</a>
+        <a href="#stack"><span class="dot">●</span> stack</a>
+        <a href="#projects"><span class="dot">●</span> projetos</a>
+        <a href="#contact"><span class="dot">●</span> contato</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="wrap">
+      <div class="terminal">
+        <div class="terminal-bar">
+          <span></span><span></span><span></span>
+          <span class="terminal-title">~/portfolio — zsh</span>
+        </div>
+        <div class="terminal-body">
+          <div class="line"><span class="prompt">$</span> <span class="cmd">whoami</span></div>
+          <h1>José Ramos</h1>
+          <div class="role">Desenvolvedor Back-end</div>
+          <div class="line"><span class="prompt">$</span> <span class="cmd">cat bio.txt</span></div>
+          <p class="bio">
+            Tenho 20 anos e gosto de construir soluções usando tecnologia.
+            Foco em back-end, APIs robustas e arquitetura de sistemas —
+            sempre buscando aprender e aplicar boas práticas de engenharia.
+          </p>
+          <div class="status-row">
+            <div class="pill"><span class="blip"></span> disponível para novos projetos</div>
+            <div class="pill">uptime: 20 anos</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="section" id="about"></section>
+
+  <section class="section" id="stack">
+    <div class="wrap">
+      <div class="route">
+        <span class="method">GET</span> /stack
+      </div>
+      <h2>Tecnologias</h2>
+      <p class="lead">Ferramentas e linguagens que uso no dia a dia para construir e manter sistemas back-end.</p>
+      <div class="stack-list">
+        <div class="stack-item"><span class="name"><span class="blip"></span>Java</span><span
+            class="tag">linguagem</span></div>
+        <div class="stack-item"><span class="name"><span class="blip"></span>Spring Boot</span><span
+            class="tag">framework</span></div>
+        <div class="stack-item"><span class="name"><span class="blip"></span>Docker</span><span
+            class="tag">infraestrutura</span></div>
+        <div class="stack-item"><span class="name"><span class="blip"></span>PostgreSQL</span><span class="tag">banco de
+            dados</span></div>
+        <div class="stack-item"><span class="name"><span class="blip"></span>Git &amp; GitHub</span><span
+            class="tag">versionamento</span></div>
+        <div class="stack-item"><span class="name"><span class="blip"></span>Scrum</span><span
+            class="tag">metodologia</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="projects">
+    <div class="wrap">
+      <div class="route">
+        <span class="method">GET</span> /projects
+      </div>
+      <h2>Projetos</h2>
+      <p class="lead">Alguns dos projetos que venho desenvolvendo. Links do GitHub serão adicionados em breve.</p>
+      <div class="projects">
+        <div class="project-card">
+          <div class="top-row">
+            <h3>Projeto 01</h3>
+            <a class="repo-link" href="#" onclick="return false;">github ↗</a>
+          </div>
+          <p>Desenvolvi junto com uma equipe da faculdade, um sistema de agendamento e gerenciamento de barbearias.
+            Nesse sistema, o barbeiro tem o
+            controle de sua barbearia onde ele pode adicionar serviços, agendar clientes, gerenciar pagamentos e
+            gerenciar horários. Utilizamos
+            Java, Spring Boot, Banco de dados Mysql, JavaScript, CSS e html no desenvolvimento desse sistema. O projeto
+            foi desenvolvido utilizando a metodologia Scrum.
+          </p>
+          <div class="placeholder-note">
+            <a href="https://github.com/josesnts-4/bellator_barbearia.git">bellator barbearia</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="top-row">
+            <h3>Projeto 02</h3>
+            <a class="repo-link" href="#" onclick="return false;">github ↗</a>
+          </div>
+          <p>Desenvolvi essa API junto com dois amigos da faculdade com foco em ajudar a gerenciar as demandas de uma
+            diretora da escola publica
+            da minha cidade. Utilizamos Java, Spring Boot e JSON web token para a segurança dos dados do usuário, no
+            desenvolvimento dessa API. O projeto foi desenvolvido utilizando a metodologia Scrum.
+          </p>
+          <div class="placeholder-note">
+            <a href="https://github.com/YuriRaniery/Gerenciador_Demandas.git">Gerenciador de Demandas</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <div class="wrap">
+      <div class="route post">
+        <span class="method">POST</span> /contact
+      </div>
+      <h2>Contato</h2>
+      <p class="lead">Vamos conversar sobre oportunidades, projetos ou colaborações.</p>
+      <div class="response-block">
+        <span class="punc">{</span><br>
+        &nbsp;&nbsp;<span class="key">"email"</span><span class="punc">:</span> <span
+          class="str">"joseramosdossantosjunior@gmail.com"</span><span class="punc">,</span><br>
+        &nbsp;&nbsp;<span class="key">"linkedin"</span><span class="punc">:</span> <span
+          class="str">"linkedin.com/in/joseramossantos"</span><span class="punc">,</span><br>
+        &nbsp;&nbsp;<span class="key">"github"</span><span class="punc">:</span> <span
+          class="str">"github.com/josesnts-4"</span><span class="punc">,</span><br>
+        &nbsp;&nbsp;<span class="key">"status"</span><span class="punc">:</span> <span class="str">"200 OK"</span><br>
+        <span class="punc">}</span>
+      </div>
+      <div class="contact-links">
+        <a href="mailto:joseramosdossantosjunior@gmail.com">✉ email</a>
+        <a href="https://linkedin.com/in/joseramossantos" target="_blank" rel="noopener">in linkedin</a>
+        <a href="https://github.com/josesnts-4" target="_blank" rel="noopener">⌥ github</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">© 2026 José Ramos</div>
+  </footer>
+
+</body>
+
+</html>
